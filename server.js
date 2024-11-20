@@ -6,8 +6,7 @@ const Stripe = require('stripe');
 const speakeasy = require('speakeasy');
 const mailgun = require('mailgun-js');
 
-const stripe = Stripe('sk_test_51QFetAJN1WGEDgJelsFJWGKm8RspBDbI6wBoc1gat1d1PCn4LBUhNfQAD1jMyXuzH35Lr6vDvWOmB3Z8jlk3WFho00mP8eXgeh'); // Replace with your secret key
-
+const stripe = Stripe('')
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
@@ -59,7 +58,7 @@ app.post('/api/verify-2fa', (req, res) => {
 });
 
 // Set up Mailgun API
-const mg = mailgun({ apiKey: '1970f80a4ae79d741ed86b8a87a72ce7-6df690bb-4c7c41d9', domain: 'sandboxfed66327f2104bb3b44e0627b232717a.mailgun.org' });
+const mg = mailgun({ apiKey: '', domain: '' });
 
 // Function to send a welcome email
 const sendWelcomeEmail = (email) => {
