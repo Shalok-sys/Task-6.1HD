@@ -1,0 +1,27 @@
+.forgot-password-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.forgot-password-section input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 20%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.forgot-password-btn {
+    padding: 8px 15px;
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.forgot-password-btn:hover {
+    background-color: black;
+    color: white;
+}

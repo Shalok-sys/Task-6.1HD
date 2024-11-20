@@ -1,0 +1,42 @@
+.login-form{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 500px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+    position: relative;
+    padding: 15px;
+}
+.login-form button[type="submit"]{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 80%;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.login-form button[type="submit"]:hover{
+    background-color: darkgray;
+    color: black;
+}
+
+input[type = "text"]{
+    width: 100%;
+}
+input[type = "password"]{
+    width: 100%;
+}
+.signup-link{
+    text-decoration: none;
+    width: 50%;
+    color: black;
+    margin-left: 85%;
+    border: 2px solid black;
+}
