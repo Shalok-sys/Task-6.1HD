@@ -1,0 +1,47 @@
+/* Container for the upload form */
+.upload-container {
+    background-color: whitesmoke; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px; /* Padding inside the container */
+    width: 400px; /* Fixed width for the container */
+    height: 400px;
+    text-align: center; /* Center text */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Input styles */
+.upload-container input[type="text"],
+.upload-container input[type="file"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside input */
+    margin: 10px 0px; /* Margin between inputs */
+    border: 1px solid grey; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Button styles */
+.upload-container button {
+    background-color: black; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+.upload-container button:hover {
+    background-color: darkgrey; /* Darker blue on hover */
+    color: black;
+}
+
+/* Status message styles */
+.upload-status {
+    margin-top: 10px; /* Margin above status message */
+    font-size: 14px; /* Font size for status */
+    color: #555; /* Darker gray for status text */
+}

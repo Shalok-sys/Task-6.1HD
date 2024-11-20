@@ -1,0 +1,97 @@
+/* Container styling */
+.video-list-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for each video card */
+.video-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Video element styling */
+.video-card video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Title styling */
+.video-card h3 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    color: #333333;
+}
+
+/* Views and rating styling */
+.video-card p {
+    font-size: 0.95rem;
+    margin: 5px 0;
+    color: #555555;
+}
+
+/* Star rating UI */
+.stars {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.star {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star:hover,
+.star.selected {
+    color: #f39c12; /* Highlight color */
+}
+
+/* Submit button styling */
+.submit-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: darkgray;
+    color: black;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .video-list-container {
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+    }
+}
+
+@media (max-width: 600px) {
+    .video-list-container {
+        grid-template-columns: 1fr; /* Switch to 1 column */
+    }
+}
