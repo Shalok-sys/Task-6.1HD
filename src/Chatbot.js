@@ -28,7 +28,7 @@ function Chatbot() {
       const response = await axios({
         url:
           "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" +
-          process.env.REACT_APP_GEMINI, // Replace with the actual API URL
+          process.env.REACT_APP_GEMINI, 
         method: "POST",
         data: {
           contents: [
