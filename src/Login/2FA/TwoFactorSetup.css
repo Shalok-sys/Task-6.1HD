@@ -1,0 +1,75 @@
+.setup-2fa {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+}
+
+.setup-2fa h1 {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.setup-2fa button {
+    background: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.setup-2fa button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.setup-2fa button:active {
+    background: #3e8e41;
+}
+
+.qrcode-container {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrcode-container canvas {
+    border: 2px solid #e0e0e0;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.setup-2fa a button {
+    background: #007BFF;
+    margin-top: 1rem;
+}
+
+.setup-2fa a button:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 480px) {
+    .setup-2fa {
+        padding: 1.5rem;
+    }
+
+    .setup-2fa h1 {
+        font-size: 1.5rem;
+    }
+
+    .setup-2fa button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
